@@ -36,13 +36,33 @@ export type Sidebar = Record<
 >;
 export const SIDEBAR: Sidebar = {
 	en: {
-		'Section Header': [
-			{ text: '嵌入式与单片机', link: 'en/introduction' },
-			{ text: '物联网', link: 'en/page-2' },
-			{ text: 'Android', link: 'en/page-3' },
-			{ text: 'linux', link: 'en/page-4' },
-			{ text: 'git', link: 'en/page-5' },
+		'Git': [
+			{ text: 'Git常用命令', link: 'git/git常用命令' },
+			{ text: 'Git安装教程', link: 'git/git常用命令' },
+			{ text: 'Git常见错误及解决方法', link: 'git/git常用命令' },
+			{ text: 'Git', link: 'demo/demo' },
+			{ text: 'Git', link: 'demo/demo' },
 		],
-		'Another Section': [{ text: 'Page 4', link: 'en/page-4' }],
+		'linux': [{ text: 'linux常用命令', link: 'demo/demo' }],
+		'ubuntu': [
+			{ text: 'ubuntu镜像站', link: 'demo/demo' },
+			{ text: 'ubuntu版本发行', link: 'demo/demo' },
+			{ text: '笨笨兔的故事', link: 'demo/demo' },
+		],
+		'Android': [
+			{ text: 'Android应用', link: 'demo/demo' },
+			{ text: 'AndroidSDK', link: 'demo/demo' },
+			{ text: 'Android框架', link: 'demo/demo' },
+			{ text: 'Android驱动', link: 'demo/demo' },
+			{ text: 'Android内核', link: 'demo/demo' },
+		],
+		'MCU': [
+			{ text: 'STM32F103C8T6', link: 'demo/demo' },
+			{ text: 'STM32F103C8T6', link: 'demo/demo' },
+			{ text: 'STM32F103C8T6', link: 'demo/demo' },
+			{ text: 'STM32F103C8T6', link: 'demo/demo' },
+			{ text: 'STM32F103C8T6', link: 'demo/demo' },
+		],
+		'IOT': [{ text: '物联网导论', link: 'demo/demo' }],
 	},
 };
