@@ -1,1 +1,8 @@
 git commit --no-verify -m " "
+
+
+环境配置：
+	https://nodejs.org/zh-cn/download/ 下载安装node
+	终端查看node -v确认安装成功
+	终端# npm install
+	终端# npm run start
