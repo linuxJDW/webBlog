@@ -1,4 +1,4 @@
-git commit --no-verify -m " "
+$ git commit --no-verify -m " "
 
 
 环境配置：
@@ -6,3 +6,7 @@ git commit --no-verify -m " "
 	终端查看node -v确认安装成功
 	终端# npm install
 	终端# npm run start
+
+代码 push 流程
+
+$ git add .
