@@ -10,3 +10,6 @@ $ git commit --no-verify -m " "
 代码 push 流程
 
 $ git add .
+$ git commit --no-verify -m "<提交日志>"
+$ git push -u origin master
+

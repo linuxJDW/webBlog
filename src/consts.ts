@@ -64,5 +64,12 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'STM32F103C8T6', link: 'demo/demo' },
 		],
 		'IOT': [{ text: '物联网导论', link: 'demo/demo' }],
+		'知识拓展': [
+			{ text: '友情链接', link: 'introduce/友情链接' },
+			{ text: '公司介绍', link: 'introduce/公司介绍' },
+			{ text: '数据报告', link: 'introduce/数据报告' },
+			{ text: '关于Tcube', link: 'introduce/关于Tcube' },
+			{ text: '商业合作', link: 'introduce/商业合作' },
+		],
 	},
 };
