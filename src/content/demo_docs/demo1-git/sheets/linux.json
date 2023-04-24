@@ -1,0 +1,323 @@
+{
+  "title": "Linux Command Cheat Sheet",
+  "repo": "https://github.com/shfshanyue/cheat-sheets",
+  "url": "https://shfshanyue.github.io/cheat-sheets/linux",
+  "doc": "https://github.com/shfshanyue/cheat-sheets/blob/master/docs/linux.md",
+  "collections": [
+    {
+      "title": "操作目录",
+      "commands": [
+        {
+          "command": "cd -",
+          "title": "进入最近离开目录"
+        },
+        {
+          "command": "ls -lah",
+          "title": "打印目录列表，包含隐藏文件"
+        },
+        {
+          "command": "ls -lahR",
+          "title": "递归打印目录信息"
+        },
+        {
+          "command": "find .",
+          "title": "递归打印目录信息"
+        },
+        {
+          "command": "tree",
+          "title": "树状结构打印目录信息"
+        }
+      ]
+    },
+    {
+      "title": "查看文件内容",
+      "commands": [
+        {
+          "command": "cat <file>",
+          "title": "查看文件内容"
+        },
+        {
+          "command": "cat <file> -n",
+          "title": "查看文件内容，并显示行号"
+        },
+        {
+          "command": "cat <file1> <file2> <file3> > <file>",
+          "title": "查看多个文件，并写入"
+        },
+        {
+          "command": "wc <file>",
+          "title": "统计文件行数，单词数与字符数"
+        }
+      ]
+    },
+    {
+      "title": "快速查看文件内容",
+      "commands": [
+        {
+          "command": "more <file>",
+          "title": "分页查看文件内容"
+        },
+        {
+          "command": "more +10 <file>",
+          "title": "定位到第十行"
+        },
+        {
+          "command": "less <file>",
+          "title": "更加灵活，使用 vi 命令操作页面"
+        },
+        {
+          "command": "head -3 <file>",
+          "title": "显示文件前三行"
+        },
+        {
+          "command": "tail -3 <file>",
+          "title": "显示文件后三行"
+        }
+      ]
+    },
+    {
+      "title": "搜索路径",
+      "commands": [
+        {
+          "command": "find . -name Readme",
+          "title": "查找文件位置"
+        },
+        {
+          "command": "find . -name '*.js'",
+          "title": "查找文件或文件夹位置"
+        },
+        {
+          "command": "find . -name '*.js' -o -name '*.jsx'",
+          "title": "查找 js 或者 jsx 结尾的文件或者目录"
+        },
+        {
+          "command": "find . -user <user>",
+          "title": "查找属于 user 的文件或者目录"
+        },
+        {
+          "command": "find . -type d",
+          "title": "只查找文件"
+        },
+        {
+          "command": "find . -type d -cmin 10",
+          "title": "查看十分钟内修改的文件"
+        }
+      ]
+    },
+    {
+      "title": "搜索字符串",
+      "commands": [
+        {
+          "command": "grep <reg> <file>",
+          "title": "在特定文件下查找匹配字符串"
+        },
+        {
+          "command": "grep -n <reg> <file>",
+          "title": "查找字符串并打印行数"
+        },
+        {
+          "command": "grep -rn <reg>",
+          "title": "在当前目录下查找匹配字符串"
+        },
+        {
+          "command": "ag <reg>",
+          "title": "在当前目录下查找匹配字符串"
+        }
+      ]
+    },
+    {
+      "title": "用户信息",
+      "commands": [
+        {
+          "command": "whoami",
+          "title": "打印用户名"
+        },
+        {
+          "command": "id",
+          "title": "打印本机的各种 id"
+        },
+        {
+          "command": "id -u",
+          "title": "打印 uid"
+        },
+        {
+          "command": "hostname",
+          "title": "打印主机名"
+        },
+        {
+          "command": "hostname <hostname>",
+          "title": "更改主机名"
+        }
+      ]
+    },
+    {
+      "title": "显示程序位置",
+      "commands": [
+        {
+          "command": "which python",
+          "title": "打印 python 的执行路径"
+        },
+        {
+          "command": "where python",
+          "title": "打印 python 的执行路径"
+        },
+        {
+          "command": "whereis python",
+          "title": "打印 python 的执行路径"
+        }
+      ]
+    },
+    {
+      "title": "显示系统信息",
+      "commands": [
+        {
+          "command": "uname -a",
+          "title": "打印系统信息"
+        },
+        {
+          "command": "df -h",
+          "title": "打印文件系统信息"
+        },
+        {
+          "command": "uptime",
+          "title": "打印开机时间"
+        }
+      ]
+    },
+    {
+      "title": "显示系统信息",
+      "commands": [
+        {
+          "command": "uname -a",
+          "title": "打印系统信息"
+        },
+        {
+          "command": "df -h",
+          "title": "打印文件系统信息"
+        },
+        {
+          "command": "uptime",
+          "title": "打印开机时间以及 CPU 负载情况"
+        },
+        {
+          "command": "cat /proc/cpuinfo",
+          "title": "查看处理器信息"
+        }
+      ]
+    },
+    {
+      "title": "排序与去重",
+      "commands": [
+        {
+          "command": "ls -lah | sort",
+          "title": "顺序打印"
+        },
+        {
+          "command": "ls -lah | sort -r",
+          "title": "逆序打印"
+        },
+        {
+          "command": "cat <file> | sort -u",
+          "title": "排序后去重",
+          "more": "cat <file> | sort | uniq"
+        }
+      ]
+    },
+    {
+      "title": "链接",
+      "commands": [
+        {
+          "command": "ln <target> <link-name>",
+          "title": "创建硬链接, target 最好使用绝对路径"
+        },
+        {
+          "command": "ln -s <target> <link-name>",
+          "title": "创建软链接"
+        }
+      ]
+    },
+    {
+      "title": "进程与线程",
+      "commands": [
+        {
+          "command": "top",
+          "title": "打印实时进程信息"
+        },
+        {
+          "command": "ps aux",
+          "title": "BSD 格式打印所有进程信息"
+        },
+        {
+          "command": "ps -ef",
+          "title": "标准格式打印所有进程信息"
+        },
+        {
+          "command": "ps -U root -u root",
+          "title": "打印 root 用户的所有进程信息"
+        },
+        {
+          "command": "ps -ejH",
+          "title": "打印进程树"
+        }
+      ]
+    },
+    {
+      "title": "network & socket",
+      "commands": [
+        {
+          "command": "ping www.zhihu.com",
+          "title": "测试网络状况"
+        },
+        {
+          "command": "netstat",
+          "title": "network statistic，打印网络连接信息"
+        },
+        {
+          "command": "netstat -tan",
+          "title": "打印所有的 TCP 连接"
+        },
+        {
+          "command": "ss",
+          "title": "socket statistic, 查看 socket 信息"
+        },
+        {
+          "command": "ss -s",
+          "title": "打印统计信息"
+        },
+        {
+          "command": "ss -at",
+          "title": "打印所有的 TCP 连接"
+        },
+        {
+          "command": "ss -o state closed",
+          "title": "打印特定状态的 TCP 连接"
+        }
+      ]
+    },
+    {
+      "title": "curl & wget",
+      "commands": [
+        {
+          "command": "curl <url>",
+          "title": "从远程获取到内容"
+        },
+        {
+          "command": "curl -v <url>",
+          "title": "打印完整http报文"
+        },
+        {
+          "command": "curl -o file <url>",
+          "title": "下载远程文件到本地"
+        },
+        {
+          "command": "curl -I <url>",
+          "title": "只打印响应头"
+        },
+        {
+          "command": "wget -m shici.xiange.tech",
+          "title": "整站下载"
+        }
+      ]
+    }
+  ]
+}

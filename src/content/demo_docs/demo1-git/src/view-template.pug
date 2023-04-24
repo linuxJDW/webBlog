@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    title= title
+    link(rel='stylesheet', href='style.css')
+  body
+    h1.subject
+      | #{title}
+      small
+        a(href=doc) Markdown
+        a(href=repo) Github
+    .container
+      each collection in collections
+        .block
+          h3= collection.title
+          each item in collection.commands
+            .item
+              .title= item.title
+              code.code= item.command
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-102193749-1', 'auto');
+      ga('send', 'pageview');

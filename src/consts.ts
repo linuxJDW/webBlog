@@ -47,7 +47,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Git常用命令', link: 'git/git常用命令' },
 			{ text: 'Git安装教程', link: 'git/git常用命令' },
 			{ text: 'Git常见错误及解决方法', link: 'git/git常用命令' },
-			{ text: 'Git', link: 'demo/demo' },
+			{ text: 'Gitlab文档', link: 'git/gitlab文档' },
 			{ text: 'Git', link: 'demo/demo' },
 		],
 		'linux': [{ text: 'linux常用命令', link: 'demo/demo' }],
