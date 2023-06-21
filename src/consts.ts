@@ -37,8 +37,8 @@ export type Sidebar = Record<
 export const SIDEBAR: Sidebar = {
 	en: {
 		'C++': [
-			{ text: '框架文件目录介绍', link: '/C++/框架文件目录介绍' },
-			{ text: '框架文件项目规范', link: '/C++/框架文件项目规范' },
+			{ text: '框架文件目录介绍', link: 'cpp/框架文件目录介绍' },
+			{ text: '框架文件项目规范', link: 'cpp/框架文件项目规范' },
 			{ text: 'demo', link: 'demo/demo' },
 			{ text: 'demo', link: 'demo/demo' },
 			{ text: 'demo', link: 'demo/demo' },
