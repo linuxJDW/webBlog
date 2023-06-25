@@ -71,7 +71,13 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'STM32F103C8T6', link: 'demo/demo' },
 			{ text: 'STM32F103C8T6', link: 'demo/demo' },
 		],
-		'IOT': [{ text: '物联网导论', link: 'demo/demo' }],
+		'IOT': [
+			{ text: '物联网导论', link: 'iot/物联网导论' },
+			{ text: 'OTA简介', link: 'iot/ota简介' },
+			{ text: 'OTA流程介绍', link: 'iot/ota流程介绍' },
+			{ text: 'demo', link: 'iot/demo' },
+			{ text: 'demo', link: 'iot/demo' },
+		],
 		'http': [
 			{ text: 'http介绍', link: 'demo/demo' },
 			{ text: 'libcurl错误码', link: 'http/libcurl错误码' },
