@@ -15,5 +15,11 @@ $ git push -u origin master
 
 部署链接：
 	https://linuxjdw.netlify.app/
+github地址：
+	https://github.com/linuxJDW/webBlog
+netlify官网：
+	https://docs.netlify.com/
+联系邮箱：	
+	linuxJDW@163.com
 
 
