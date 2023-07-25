@@ -39,7 +39,7 @@ export const SIDEBAR: Sidebar = {
 		'C++': [
 			{ text: '框架文件目录介绍', link: 'cpp/框架文件目录介绍' },
 			{ text: '框架文件项目规范', link: 'cpp/框架文件项目规范' },
-			{ text: 'demo', link: 'demo/demo' },
+			{ text: '编程技巧-回调函数', link: 'cpp/编程技巧-回调函数' },
 			{ text: 'demo', link: 'demo/demo' },
 			{ text: 'demo', link: 'demo/demo' },
 		],
